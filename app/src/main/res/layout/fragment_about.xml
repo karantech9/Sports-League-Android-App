@@ -1,0 +1,75 @@
+<com.nirhart.parallaxscroll.views.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    app:parallax_factor="1.5"
+    tools:context=".MainActivity"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/aboutcup"
+            android:gravity="center"
+            android:text=""
+            android:textSize="50sp"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:background="@color/button_material_light"
+            android:layout_below="@+id/image"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/button_material_light"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:alpha="0.8"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:text="About :"
+                android:id="@+id/place" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/button_material_light"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:alpha="0.8"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:text="The Indian Premier League (IPL) (currently known as the Pepsi Indian Premier League for sponsorship reasons) is an annual Indian Twenty20 cricket tournament, founded in 2008 by the BCCI. It consists of a number of teams (currently 8) which are named after Indian cities and owned by franchises, and is held in India between April and June. The IPL is the most-watched Twenty20 league in the world and is also known for its commercial success. In 2010, the IPL became the first sporting event to be broadcast live on YouTube. The brand value of the 2014 Indian Premier League was estimated to be around US$7.2 billion. The IPL is currently supervised by BCCI Vice-President Ranjib Biswal, who serves as the League's chairman and Commissioner. Sundar Raman has been the IPL chief operating officer (COO) since its first season, after he was appointed by the former IPL Commissioner Lalit Modi in 2008. Of the 10 teams to have competed since its inception, five have won the title: Kolkata Knight Riders (2 times), Chennai Super Kings (2), Rajasthan Royals (1), Deccan Chargers (1), and Mumbai Indians (1). Chennai Super Kings are the most successful team so far, having won the title twice and have managed to qualify for the finals in every season except in 2009 and 2014. The current champions are the Kolkata Knight Riders, who won the 2014 season by beating the Kings XI Punjab by 3 wickets. The IPL was inaugurated in 2008, in the midst of the period during which the Indian Cricket League was operational. Until 2012, the Indian Premier League was sponsored by DLF after they paid $50 million for a five-year sponsorship of the competition. Pepsi took over the contract for the 2013 IPL season after paying close to $72 million for the 5-year contract. In 2008, Sony paid $1 billion for the broadcasting rights over a ten-year period. The IPL is watched globally, and in 2010 made history by becoming the first sporting event to be broadcast live on YouTube. The winning bidders for the eight franchises (or clubs) were announced on 24 January 2008. While the total base price for auction was US$400 million, the auction fetched US$723.59 million. Chennai Super Kings, Delhi Daredevils, Kings XI Punjab, Kolkata Knight Riders, Mumbai Indians, Rajasthan Royals, Royal Challengers Bangalore and Deccan Chargers were the founding clubs of the new professional league."
+                android:id="@+id/details"
+                android:layout_below="@+id/place" />
+
+        </RelativeLayout>
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."-->
+            <!--android:textSize="26sp"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:padding="5dp"-->
+            <!--tools:ignore="HardcodedText" />-->
+    </LinearLayout>
+
+</com.nirhart.parallaxscroll.views.ParallaxScrollView>

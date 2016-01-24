@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="55dp"
+    android:id="@+id/container"
+    tools:context="com.example.karan92.finalprojectspring15.Fragment_News">
+
+    <se.emilsjolander.flipview.FlipView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:flipview="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flip_view"
+        flipview:orientation="vertical"
+        flipview:overFlipMode="rubber_band" />
+
+</FrameLayout>

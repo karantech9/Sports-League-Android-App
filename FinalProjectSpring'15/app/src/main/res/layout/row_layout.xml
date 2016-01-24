@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:id="@+id/relative_layout"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp"
+    android:background="@color/material_blue_grey_800"
+    android:descendantFocusability="blocksDescendants"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="135dp"
+        android:scaleType="fitXY"
+        android:id="@+id/movie_image"
+        android:src="@drawable/dhoni"
+        android:layout_alignTop="@+id/title"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Harry Potter and the Deathly Hallows: Part 2"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:paddingLeft="4dp"
+        android:id="@+id/title"
+        android:layout_toEndOf="@+id/movie_image" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ratings : "
+        android:textColor="#fff"
+        android:paddingTop="5dp"
+        android:paddingLeft="4dp"
+        android:id="@+id/ratings"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="12dp"
+        android:layout_below="@+id/title"
+        android:layout_toEndOf="@+id/movie_image" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:paddingTop="5dp"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="10"
+        android:rating="8.5"
+        android:layout_alignTop="@+id/ratings"
+        android:layout_toEndOf="@+id/ratings" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Year :"
+        android:textColor="#fff"
+        android:paddingTop="5dp"
+        android:paddingLeft="4dp"
+        android:id="@+id/year"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="12dp"
+        android:layout_alignTop="@+id/yeartext"
+        android:layout_toStartOf="@+id/yeartext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="2010"
+        android:textColor="#fff"
+        android:paddingTop="5dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="7dp"
+        android:id="@+id/yeartext"
+        android:fontFamily="sans-serif-light"
+        android:textSize="12dp"
+        android:layout_alignBottom="@+id/ratingBar"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Fearless optimist Anna teams up with Kristoff in an epic journey, encountering Everest-like conditions, and a hilarious snowman named Olaf in a race to find Anna's sister Elsa, whose icy powers have trapped the kingdom in eternal winter."
+        android:paddingLeft="4dp"
+        android:textColor="#fff"
+        android:id="@+id/descriptiontext"
+        android:fontFamily="sans-serif-light"
+        android:textSize="12dp"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/movie_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Description :"
+        android:textColor="#fff"
+        android:paddingTop="5dp"
+        android:paddingLeft="4dp"
+        android:id="@+id/textView"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="12dp"
+        android:layout_below="@+id/ratings"
+        android:layout_toEndOf="@+id/movie_image" />
+
+
+</RelativeLayout>

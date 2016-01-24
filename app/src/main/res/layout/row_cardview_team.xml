@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/cardView"
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+android:clickable="true"
+card_view:cardBackgroundColor="@color/material_blue_grey_900"
+android:focusable="true"
+android:layout_margin="3dp"
+card_view:cardCornerRadius="10dp">
+
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/playerImg"
+        android:background="@drawable/bcg"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MS Dhoni"
+        android:fontFamily="sans-serif"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:paddingLeft="4dp"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/playerImg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Role : "
+        android:textColor="#fff"
+        android:paddingLeft="4dp"
+        android:id="@+id/role"
+        android:fontFamily="sans-serif"
+        android:textSize="13dp"
+        android:layout_below="@+id/title"
+        android:layout_alignStart="@+id/title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bats : "
+        android:textColor="#fff"
+        android:paddingLeft="4dp"
+        android:id="@+id/bats"
+        android:fontFamily="sans-serif"
+        android:textSize="13dp"
+        android:layout_above="@+id/bowltext"
+        android:layout_alignStart="@+id/role" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bowls : "
+        android:textColor="#fff"
+        android:paddingLeft="4dp"
+        android:id="@+id/bowl"
+        android:fontFamily="sans-serif"
+        android:textSize="13dp"
+        android:layout_alignTop="@+id/bowltext"
+        android:layout_alignStart="@+id/bats" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nationality : "
+        android:textColor="#fff"
+        android:paddingLeft="4dp"
+        android:id="@+id/nationality"
+        android:fontFamily="sans-serif"
+        android:textSize="13dp"
+        android:layout_below="@+id/bowl"
+        android:layout_alignStart="@+id/bowl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="WC Keeper"
+        android:textColor="#fff"
+        android:paddingLeft="4dp"
+        android:id="@+id/roletext"
+        android:fontFamily="sans-serif-light"
+        android:textSize="13dp"
+        android:layout_alignTop="@+id/role"
+        android:layout_toEndOf="@+id/role" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="RHS"
+        android:textColor="#fff"
+        android:paddingLeft="4dp"
+        android:id="@+id/batstext"
+        android:fontFamily="sans-serif-light"
+        android:textSize="13dp"
+        android:layout_below="@+id/roletext"
+        android:layout_toEndOf="@+id/bats" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Leg"
+        android:textColor="#fff"
+        android:paddingLeft="4dp"
+        android:id="@+id/bowltext"
+        android:fontFamily="sans-serif-light"
+        android:textSize="13dp"
+        android:layout_below="@+id/batstext"
+        android:layout_toEndOf="@+id/bowl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Indian"
+        android:textColor="#fff"
+        android:paddingLeft="4dp"
+        android:id="@+id/nationalitytext"
+        android:fontFamily="sans-serif-light"
+        android:textSize="13dp"
+        android:layout_alignTop="@+id/nationality"
+        android:layout_toEndOf="@+id/nationality" />
+
+</RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parallax_image_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/example" />
+
+            <View
+                android:id="@+id/anchor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parallax_image_height"
+                android:minHeight="@dimen/parallax_image_height" />
+
+            <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView
+                android:id="@+id/cardList"
+                android:background="@color/background_material_dark"
+                android:layout_marginTop="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+        </RelativeLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+
+</FrameLayout>

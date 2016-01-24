@@ -1,0 +1,243 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/scroll"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/venueImg"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/trophy"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#050505"
+        android:alpha="0.8"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#fff"
+        android:layout_marginLeft="5dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="M. Chinnaswamy, Chennai"
+        android:clickable="true"
+        android:id="@+id/venueTitle"
+        android:layout_alignTop="@+id/venueImg"
+        android:layout_alignEnd="@+id/venueImg" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/material_blue_grey_800"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:text="Stadium Details"
+            android:clickable="true"
+            android:id="@+id/venueStadiumDetail"
+            android:layout_below="@+id/venueImg"
+            android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_below="@id/venueStadiumDetail"
+        android:id="@+id/relative1"
+        android:background="@color/button_material_light"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button_material_light"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:text="Location :"
+            android:clickable="true"
+            android:id="@+id/venueLocation"
+            android:layout_alignParentStart="true" />
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_material_light"
+             android:paddingBottom="2dp"
+             android:paddingTop="2dp"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:text="Ahmedabad"
+            android:clickable="true"
+            android:id="@+id/venueLocationText"
+            android:layout_above="@+id/venueCapacity"
+            android:layout_toEndOf="@+id/venueLocation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button_material_light"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:text="Capacity :"
+            android:clickable="true"
+            android:id="@+id/venueCapacity"
+            android:layout_below="@+id/venueLocation"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_material_light"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:text="55,000"
+            android:clickable="true"
+            android:id="@+id/venueCapacityText"
+            android:layout_alignTop="@+id/venueCapacity"
+            android:layout_toEndOf="@+id/venueCapacity" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button_material_light"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:text="Ends :"
+            android:clickable="true"
+            android:id="@+id/venueEnds"
+            android:layout_below="@+id/venueCapacity"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_material_light"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:text="55,000"
+            android:clickable="true"
+            android:id="@+id/venueEndsText"
+            android:layout_alignTop="@+id/venueEnds"
+            android:layout_toEndOf="@+id/venueEnds" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/material_blue_grey_800"
+        android:fontFamily="sans-serif-medium"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:text="About"
+        android:clickable="true"
+        android:id="@+id/venueStadiumAbout"
+        android:layout_below="@+id/relative1"
+        android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:alpha="0.8"
+            android:fontFamily="sans-serif-medium"
+            android:background="@color/button_material_light"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:text="AboutStadiumText"
+            android:clickable="true"
+            android:layout_below="@+id/venueStadiumAbout"
+            android:id="@+id/venurAboutText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/material_blue_grey_800"
+        android:fontFamily="sans-serif-medium"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:text="Geographic Location"
+        android:clickable="true"
+        android:id="@+id/venueMap"
+        android:layout_below="@+id/venurAboutText"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:id="@+id/map_layout"
+        android:layout_width="match_parent"
+        android:background="@color/material_blue_grey_800"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/venueMap"
+        android:layout_height="250dp">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+
+        <ImageView
+            android:id="@+id/transparent_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"  />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

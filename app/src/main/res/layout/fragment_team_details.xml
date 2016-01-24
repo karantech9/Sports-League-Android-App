@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.karan92.finalprojectspring15.Fragment_TeamDetails">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/background_material_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true" />
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_tab_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/ms_primary_dark"
+            android:textColor="#fff"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+    </android.support.v4.view.ViewPager>
+
+</FrameLayout>

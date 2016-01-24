@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#009688</color>
+    <color name="primaryDark">#00796b</color>
+    <color name="accent">#eeff41</color>
+    <color name="accentLight">#F4FF81</color>
+    <color name="ms_primary">#2196F3</color>
+    <color name="ms_primary_dark">#1565C0</color>
+    <color name="ms_fab_btn">#2962FF</color>
+    <color name="inset">#9000</color>
+    <color name="frame">#000</color>
+</resources>

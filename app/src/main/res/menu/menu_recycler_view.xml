@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.karan92.androidlab6.RecyclerViewActivity">
+    <item android:id="@+id/search"
+        android:title="Search Text"
+        android:orderInCategory="100"
+        android:icon="@drawable/search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+</menu>

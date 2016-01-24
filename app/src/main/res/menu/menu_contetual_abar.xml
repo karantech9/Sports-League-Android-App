@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/duplicate"
+        android:title="Duplicate"
+        android:orderInCategory="100"
+        android:icon="@drawable/overflow"
+        app:showAsAction="ifRoom|withText"
+        android:titleCondensed="Delete"
+/>
+
+
+    <item android:id="@+id/delete"
+        android:title="Delete"
+        android:orderInCategory="100"
+        android:icon="@drawable/overflow"
+        app:showAsAction="ifRoom|withText"
+        android:titleCondensed="Delete"
+        />
+</menu>

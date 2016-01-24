@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listbuddies="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/trophy"
+        android:background="#fff"
+        android:scaleType="fitXY" />
+
+    <com.jpardogo.listbuddies.lib.views.ListBuddiesLayout xmlns:listbuddies="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listbuddies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        listbuddies:speed="2"
+        listbuddies:gap="@dimen/gap"
+        listbuddies:listsDivider="@drawable/divider"
+        listbuddies:listsDividerHeight="@dimen/divider_height"
+        listbuddies:gapColor="#000"
+        listbuddies:autoScrollFaster="right"
+        listbuddies:scrollFaster="left" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/abc_input_method_navigation_guard" />
+
+</FrameLayout>
